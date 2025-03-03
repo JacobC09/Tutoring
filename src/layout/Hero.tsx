@@ -20,8 +20,8 @@ export default function Hero() {
                     <h1 className="text-9xl text-blue-600 tracking-wider my-8">Personal Tutoring</h1>
                     <p className="text-lg font">
                         Empowering students in Oakville with personalized tutoring! We provide expert guidance in math, science,
-                        and more, helping students build confidence and achieve academic success. Whether it's homework help or exam prep,
-                        we're here to support every learner's journey!"
+                        and more, helping students build confidence and achieve academic success. Whether it&apos;s homework help or exam prep,
+                        we&apos;re here to support every learner&apos;s journey!"
                     </p>
                     <button className="relative px-10 py-4 bg-black text-white font-bold rounded-full tracking-[4px] text-base my-8">
                         CONTACT US
@@ -37,6 +37,7 @@ export default function Hero() {
             <div className="absolute left-[50%] bottom-12 flex flex-col items-center gap-2 translate-x-[-50%]">
                 <FaAngleDown size={32} />
             </div>
+
         </div>
     );
 }

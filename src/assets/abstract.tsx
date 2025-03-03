@@ -1,4 +1,4 @@
-const Abstract = (props: any) => (
+const Abstract = () => (
     <svg xmlns="http://www.w3.org/2000/svg" width="100%" height="100%" viewBox="0 0 375 500" fill="none">
         <g clipPath="url(#clip0_0_1)">
             <mask id="mask0_0_1" style={{ maskType: "luminance" }} maskUnits="userSpaceOnUse" x="-432" y="0" width="807" height="500">
