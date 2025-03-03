@@ -21,7 +21,7 @@ export default function Hero() {
                     <p className="text-lg font">
                         Empowering students in Oakville with personalized tutoring! We provide expert guidance in math, science,
                         and more, helping students build confidence and achieve academic success. Whether it&apos;s homework help or exam prep,
-                        we&apos;re here to support every learner&apos;s journey!"
+                        we&apos;re here to support every learner&apos;s journey!
                     </p>
                     <button className="relative px-10 py-4 bg-black text-white font-bold rounded-full tracking-[4px] text-base my-8">
                         CONTACT US
