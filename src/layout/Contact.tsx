@@ -42,10 +42,10 @@ export default function Contact() {
                     <div>
                         <ContactForm />
                     </div>
-                    
+
 
                 </div>
-            
+
             </div>
         </div>
     );

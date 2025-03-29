@@ -5,7 +5,7 @@ export default function Subjects() {
         <div className="px-24 py-48 mt-12">
             <div className="m-auto max-w-screen-xl">
 
-                <p className="tracking-[10px] text-center font-bold">Testamonials</p>
+                <p className="tracking-[10px] text-center font-bold">Subjects</p>
                 <h2 className="text text-7xl text-center text-blue-400 mt-12 mb-24">What We Offer</h2>
 
                 <div className="grid grid-cols-2">

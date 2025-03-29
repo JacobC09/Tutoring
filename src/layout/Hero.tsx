@@ -1,4 +1,5 @@
 import Abstract from "@/assets/abstract";
+import { Navbar, NavItem } from "@/components/Navbar";
 import { FaLocationDot, FaAngleDown } from "react-icons/fa6";
 
 export default function Hero() {
@@ -6,11 +7,12 @@ export default function Hero() {
         <div className="relative min-h-screen w-full overflow-x-hidden">
             <div className="relative h-screen flex flex-col justify-center ml-[10vw]">
 
-                <nav className="absolute left-0 top-0 flex gap-24 justify-start my-32">
+                <Navbar>
                     <NavItem>ABOUT</NavItem>
-                    <NavItem>EXPERIENCE</NavItem>
+                    <NavItem>SUBJECTS</NavItem>
                     <NavItem>CONTACT</NavItem>
-                </nav>
+                    <NavItem>TESTIMONIALS</NavItem>
+                </Navbar>
 
                 <div className="max-w-screen-md">
                     <div className="flex gap-2 items-center">
@@ -41,13 +43,3 @@ export default function Hero() {
         </div>
     );
 }
-
-function NavItem({children, ...props}: any) {
-    return (
-        <a className="group tracking-widest cursor-pointer" {...props}>
-            {children}
-            <div className="w-0 group-hover:w-full mt-1 h-[2px] bg-black transition-all"></div>
-        </a>
-    );
-}
-
