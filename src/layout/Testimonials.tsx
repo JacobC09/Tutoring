@@ -1,24 +1,32 @@
 import { cn } from "@/lib/utils";
 import { FaStar } from "react-icons/fa6"
+import Slideshow from "@/components/Slideshow"
+import Section from "@/components/Section";
 
 export default function Reviews() {
     return (
-        <div className="px-24 py-48 mt-12">
-            <div className="m-auto max-w-screen-xl">
+        <Section>
+            <p className="tracking-[10px] text-center font-bold">Testamonials</p>
+            <h2 className="text text-7xl text-center text-blue-400 mt-12 mb-24">Trusted By Dozens</h2>
 
-                <p className="tracking-[10px] text-center font-bold">Testamonials</p>
-                <h2 className="text text-7xl text-center text-blue-400 mt-12 mb-24">Trusted By Dozens</h2>
-
-                <div className="relative w-[1000px] h-[650px] mx-auto">
-                    <Testimonial bg="bg-gray-800" line="bg-gray-500" className="left-0 top-[50%] -rotate-6 translate-y-[-50%] absolute w-96 text-white" />
-                    <Testimonial bg="bg-cyan-300" line="bg-cyan-500" className="left-[50%] top-[5%] -rotate-12 translate-x-[-50%] absolute w-96 text-gray-800" />
-                    <Testimonial bg="bg-yellow-300" line="bg-yellow-500" className="bottom-0 left-[20%] rotate-3 absolute w-96 text-gray-800" />
-                    <Testimonial bg="bg-lime-300" line="bg-lime-500" className="right-0 top-[12%] rotate-6 absolute w-96 text-gray-800" />
-                    <Testimonial bg="bg-rose-300" line="bg-rose-400" className="right-[10%] bottom-[5%] rotate-12 absolute w-96" />
-                </div>
-
+            <div className="hidden xl:block relative w-[1000px] h-[650px] mx-auto">
+                <Testimonial bg="bg-gray-800" line="bg-gray-500" className="absolute left-0 top-[50%] -rotate-6 translate-y-[-50%] w-96 text-white" />
+                <Testimonial bg="bg-cyan-300" line="bg-cyan-500" className="absolute left-[50%] top-[5%] -rotate-12 translate-x-[-50%] w-96 text-gray-800" />
+                <Testimonial bg="bg-yellow-300" line="bg-yellow-500" className="absolute bottom-0 left-[20%] rotate-3 w-96 text-gray-800" />
+                <Testimonial bg="bg-lime-300" line="bg-lime-500" className="absolute right-0 top-[12%] rotate-6 w-96 text-gray-800" />
+                <Testimonial bg="bg-rose-300" line="bg-rose-400" className="absolute right-[10%] bottom-[5%] rotate-12 w-96" />
             </div>
-        </div>
+
+            <div className="block xl:hidden">
+                <Slideshow>
+                    <Testimonial bg="bg-gray-800" line="bg-gray-500" className="min-w-96 text-white" />
+                    <Testimonial bg="bg-cyan-300" line="bg-cyan-500" className="min-w-96" />
+                    <Testimonial bg="bg-yellow-300" line="bg-yellow-500" className="min-w-96" />
+                    <Testimonial bg="bg-lime-300" line="bg-lime-500" className="min-w-96" />
+                    <Testimonial bg="bg-rose-300" line="bg-rose-400" className="min-w-96" />
+                </Slideshow>
+            </div>
+        </Section>
     );
 }
 

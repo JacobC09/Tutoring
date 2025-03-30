@@ -1,17 +1,18 @@
 import Abstract from "@/assets/abstract";
-import { Navbar, NavItem } from "@/components/Navbar";
+import HoverLink from "@/components/HoverLink";
+import Navbar from "@/components/Navbar";
 import { FaLocationDot, FaAngleDown } from "react-icons/fa6";
 
 export default function Hero() {
     return (
-        <div className="relative min-h-screen w-full overflow-x-hidden">
-            <div className="relative h-screen flex flex-col justify-center ml-[10vw]">
+        <div className="relative min-h-screen w-full overflow-x-hidden" id="hero">
+            <div className="relative h-screen flex flex-col justify-center items-center mx-12 xl:m-0 xl:items-start xl:ml-[10vw]">
 
                 <Navbar>
-                    <NavItem>ABOUT</NavItem>
-                    <NavItem>SUBJECTS</NavItem>
-                    <NavItem>CONTACT</NavItem>
-                    <NavItem>TESTIMONIALS</NavItem>
+                    <HoverLink className="tracking-widest">ABOUT</HoverLink>
+                    <HoverLink className="tracking-widest">SUBJECTS</HoverLink>
+                    <HoverLink className="tracking-widest">CONTACT</HoverLink>
+                    <HoverLink className="tracking-widest">TESTIMONIALS</HoverLink>
                 </Navbar>
 
                 <div className="max-w-screen-md">
@@ -19,7 +20,7 @@ export default function Hero() {
                         <FaLocationDot size={25} />
                         <p className="font-bold text-2xl">Oakville</p>
                     </div>
-                    <h1 className="text-9xl text-blue-600 tracking-wider my-8">Personal Tutoring</h1>
+                    <h1 className="text-6xl sm:text-8xl lg:text-9xl text-blue-600 tracking-wider my-8">Personal Tutoring</h1>
                     <p className="text-lg font">
                         Empowering students in Oakville with personalized tutoring! We provide expert guidance in math, science,
                         and more, helping students build confidence and achieve academic success. Whether it&apos;s homework help or exam prep,
@@ -32,7 +33,7 @@ export default function Hero() {
                 </div>
             </div>
 
-            <div className="absolute h-screen hidden top-0 right-[-245px] 2xl:block 4xl:right-0 ">
+            <div className="absolute h-screen hidden top-0 right-0 xl:block xl:translate-x-[60%] 2xl:translate-x-[50%] 3xl:translate-x-[25%] 4xl:translate-x-[10%] min-[2250px]:translate-x-0">
                 <Abstract />
             </div>
 

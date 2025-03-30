@@ -14,6 +14,16 @@ export default {
                 '3xl': "1800px",
                 '4xl': "2100px",
             },
+            animation: {
+                translateLeft: 'translateLeft 20s linear infinite',
+            },
+            keyframes: {
+                translateLeft: {
+                    '0%': { transform: 'translateX(0)' },
+                    '100%': { transform: 'translateX(-100%)' },
+                },
+            },
+
         },
     },
     plugins: [],
