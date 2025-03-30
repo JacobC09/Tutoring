@@ -7,7 +7,7 @@ export default function Hero() {
     return (
         <div className="relative min-h-screen w-full overflow-x-hidden" id="hero">
             <div className="relative h-screen flex flex-col justify-center items-center mx-12 xl:m-0 xl:items-start xl:ml-[10vw]">
-
+                
                 <Navbar>
                     <HoverLink className="tracking-widest">ABOUT</HoverLink>
                     <HoverLink className="tracking-widest">SUBJECTS</HoverLink>
@@ -37,7 +37,7 @@ export default function Hero() {
                 <Abstract />
             </div>
 
-            <div className="absolute left-[50%] bottom-12 flex flex-col items-center gap-2 translate-x-[-50%]">
+            <div className="sm:absolute left-[50%] bottom-12 flex flex-col items-center gap-2 sm:translate-x-[-50%]">
                 <FaAngleDown size={32} />
             </div>
 
