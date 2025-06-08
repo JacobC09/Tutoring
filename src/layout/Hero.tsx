@@ -5,8 +5,8 @@ import { FaLocationDot, FaAngleDown } from "react-icons/fa6";
 
 export default function Hero() {
     return (
-        <div className="relative min-h-screen w-full overflow-x-hidden" id="hero">
-            <div className="relative h-screen flex flex-col justify-center items-center mx-12 xl:m-0 xl:items-start xl:ml-[10vw]">
+        <div className="w-full overflow-x-hidden" id="hero">
+            <div className="relative py-[5vh] sm:py-0 sm:h-screen flex flex-col justify-center items-center mx-12 xl:m-0 xl:items-start xl:ml-[10vw]">
                 
                 <Navbar>
                     <HoverLink className="tracking-widest">ABOUT</HoverLink>
@@ -21,7 +21,7 @@ export default function Hero() {
                         <p className="font-bold text-2xl">Oakville</p>
                     </div>
                     <h1 className="text-6xl sm:text-8xl lg:text-9xl text-blue-600 tracking-wider my-8">Personal Tutoring</h1>
-                    <p className="text-lg font">
+                    <p className="text-base sm:text-lg font">
                         Empowering students in Oakville with personalized tutoring! We provide expert guidance in math, science,
                         and more, helping students build confidence and achieve academic success. Whether it&apos;s homework help or exam prep,
                         we&apos;re here to support every learner&apos;s journey!

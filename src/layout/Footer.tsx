@@ -21,7 +21,7 @@ export default function Footer() {
                 <div className="space-y-4">
                     <p className="text-lg font-bold ">Sign up for our newsletter for updates!</p>
                     <div>
-                        <form action="https://formsubmit.co/jake.comay@gmail.com" method="post" className="flex gap-4 text-black">
+                        <form action="https://formsubmit.co/jake.comay@gmail.com" method="post" className="flex gap-4 text-black flex-col sm:flex-row">
                             <input type="hidden" name="_autoresponse" value="Thanks for joining the newsletter! Stay tuned for updates." />
                             <input type="hidden" name="_subject" value="[Newsletter]" />
                             <input type="email" name="email" placeholder="example@domain.com" autoComplete="email"
