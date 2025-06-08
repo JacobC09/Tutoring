@@ -13,7 +13,7 @@ export default function Question() {
         <div className="border-b-2 py-8 cursor-pointer" onClick={() => setOpen(!open)} >
             <div className="flex items-center gap-8">
                 <FaArrowRight size={25} className={cn("text-blue-500 transition-all duration-300 ease-out", open ? "rotate-90" : "rotate-0")} />
-                <p className="text-2xl font-bold">How much does each session cost?</p>
+                <p className="text-xl sm:text-2xl font-bold">How much does each session cost?</p>
             </div>
             <div ref={ref} className="overflow-hidden grid transition-all duration-300 ease-out" style={{maxHeight: open ? ref.current?.scrollHeight : 0}}>
                 <p className="pt-8">

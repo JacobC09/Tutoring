@@ -9,3 +9,9 @@ body {
 h1, h2, h3, h4, h5, h6 {
     @apply font-title font-bold tracking-wide sm:text-[0.5em];
 }
+
+@media (max-width: 448px) {
+    html {
+      font-size: 14px;
+    }
+}

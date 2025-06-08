@@ -7,7 +7,7 @@ export default function Subjects() {
     return (
         <Section id="subjects">
             <p className="tracking-[10px] text-center font-bold">Subjects</p>
-            <h2 className="text text-7xl text-center text-blue-400 mt-12 mb-24">What We Offer</h2>
+            <h2 className="text text-5xl sm:text-7xl text-center text-blue-400 mt-12 mb-24">What We Offer</h2>
 
             <div className="grid lg:grid-cols-2">
 

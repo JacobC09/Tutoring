@@ -5,7 +5,7 @@ export default function About() {
     return (
         <Section dark id="about">
             <p className="tracking-[10px] text-center font-bold">About Us</p>
-            <h2 className="text text-7xl text-center text-blue-400 mt-12 mb-24">How Does It Work?</h2>
+            <h2 className="text text-5xl sm:text-7xl text-center text-blue-400 mt-12 mb-24">How Does It Work?</h2>
 
             <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 4xl:gap-8">
 

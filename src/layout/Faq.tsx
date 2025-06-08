@@ -5,7 +5,7 @@ export default function Faq() {
     return (
         <Section dark id="faq">
             <p className="tracking-[10px] text-center font-bold">Freqeuently Asked Questions</p>
-            <h2 className="text text-7xl text-center text-blue-400 mt-12 mb-24">Have Questions?</h2>
+            <h2 className="text text-5xl sm:text-7xl text-center text-blue-400 mt-12 mb-24">Have Questions?</h2>
 
             <Question />
             <Question />

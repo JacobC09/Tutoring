@@ -7,7 +7,7 @@ export default function Reviews() {
     return (
         <Section>
             <p className="tracking-[10px] text-center font-bold">Testamonials</p>
-            <h2 className="text text-7xl text-center text-blue-400 mt-12 mb-24">Trusted By Dozens</h2>
+            <h2 className="text text-5xl sm:text-7xl text-center text-blue-400 mt-12 mb-24">Trusted By Dozens</h2>
 
             <div className="hidden xl:block relative w-[1000px] h-[650px] mx-auto">
                 <Testimonial bg="bg-gray-800" line="bg-gray-500" className="absolute left-0 top-[50%] -rotate-6 translate-y-[-50%] w-96 text-white" />
