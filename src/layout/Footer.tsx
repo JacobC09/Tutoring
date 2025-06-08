@@ -4,7 +4,7 @@ import { FaLocationDot } from "react-icons/fa6"
 export default function Footer() {
     return (
         <footer className="w-full bg-gray-800 text-white px-24" id="footer">
-            <div className="flex flex-col gap-16 xl:flex-row justify-between pt-32 pb-24">
+            <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 gap-16 xl:gap-32 pt-32 pb-24">
                 <div className="text-white grid gap-6 font-bold">
                     <div className="flex gap-2 items-center">
                         <FaLocationDot size={25} />
@@ -21,7 +21,7 @@ export default function Footer() {
                 <div className="space-y-4">
                     <p className="text-lg font-bold ">Sign up for our newsletter for updates!</p>
                     <div>
-                        <form action="https://formsubmit.co/jake.comay@gmail.com" method="post" className="flex gap-4 text-black flex-col sm:flex-row">
+                        <form action="https://formsubmit.co/jake.comay@gmail.com" method="post" className="flex gap-4 text-black flex-col 3xl:flex-row">
                             <input type="hidden" name="_autoresponse" value="Thanks for joining the newsletter! Stay tuned for updates." />
                             <input type="hidden" name="_subject" value="[Newsletter]" />
                             <input type="email" name="email" placeholder="example@domain.com" autoComplete="email"
@@ -44,10 +44,11 @@ export default function Footer() {
 
                 <div className="text-lg mr-64 space-y-4">
                     <p className="font-bold text-blue-400">Navigation</p>
-                    <HoverLink underline="bg-white">About</HoverLink>
-                    <HoverLink underline="bg-white">Offers</HoverLink>
-                    <HoverLink underline="bg-white">Contact</HoverLink>
-                    <HoverLink underline="bg-white">Testimonials</HoverLink>
+                    <HoverLink underline="bg-white" href="#about">About</HoverLink>
+                    <HoverLink underline="bg-white" href="#subjects">Subjects</HoverLink>
+                    <HoverLink underline="bg-white" href="#contact">Contact</HoverLink>
+                    <HoverLink underline="bg-white" href="#testimonials">Testimonials</HoverLink>
+                    <HoverLink underline="bg-white" href="#faq">FAQ</HoverLink>
                 </div>
             </div>
 

@@ -3,9 +3,9 @@ import { FaStar } from "react-icons/fa6"
 import Slideshow from "@/components/Slideshow"
 import Section from "@/components/Section";
 
-export default function Reviews() {
+export default function Testimonials() {
     return (
-        <Section>
+        <Section id="testimonials">
             <p className="tracking-[10px] text-center font-bold">Testamonials</p>
             <h2 className="text text-5xl sm:text-7xl text-center text-blue-400 mt-12 mb-24">Trusted By Dozens</h2>
 

@@ -39,13 +39,13 @@ export default function Navbar({ children }) {
 
     return (
         <>
-            <nav ref={heroNav} className="sm:absolute top-0 flex flex-col items-center gap-8 my-12 md:my-32 xl:items-start 4xl:flex-row 4xl:items-center 4xl:gap-32">
+            <nav ref={heroNav} className="sm:absolute top-0 flex flex-col items-center gap-12 my-12 md:my-32 xl:items-start">
                 <div className="flex items-center left-24 gap-4 text-xl sm:text-2xl tracking-wide font-title text-blue-400">
                     <FaRegHandPeace size={36} className="scale-75 sm:scale-100" />
                     <p>Comay Tutoring Co.</p>
                 </div>
 
-                <div className="hidden md:flex items-center justify-start gap-24 4xl:gap-16">
+                <div className="hidden md:flex items-center justify-start gap-24">
                     {children}
                 </div>
             </nav>

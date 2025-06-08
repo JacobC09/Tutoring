@@ -1,18 +1,22 @@
+"use client";
+
 import Abstract from "@/assets/abstract";
 import HoverLink from "@/components/HoverLink";
 import Navbar from "@/components/Navbar";
-import { FaLocationDot, FaAngleDown } from "react-icons/fa6";
+import Arrow from "@/components/Arrow";
+import { FaLocationDot } from "react-icons/fa6";
 
 export default function Hero() {
     return (
-        <div className="w-full overflow-x-hidden" id="hero">
+        <div className="relative w-full overflow-x-hidden" id="hero">
             <div className="relative py-[5vh] sm:py-0 sm:h-screen flex flex-col justify-center items-center mx-12 xl:m-0 xl:items-start xl:ml-[10vw]">
-                
+
                 <Navbar>
-                    <HoverLink className="tracking-widest">ABOUT</HoverLink>
-                    <HoverLink className="tracking-widest">SUBJECTS</HoverLink>
-                    <HoverLink className="tracking-widest">CONTACT</HoverLink>
-                    <HoverLink className="tracking-widest">TESTIMONIALS</HoverLink>
+                    <HoverLink className="tracking-widest" href="#about">ABOUT</HoverLink>
+                    <HoverLink className="tracking-widest" href="#subjects">SUBJECTS</HoverLink>
+                    <HoverLink className="tracking-widest" href="#contact">CONTACT</HoverLink>
+                    <HoverLink className="tracking-widest" href="#testimonials">TESTIMONIALS</HoverLink>
+                    <HoverLink className="tracking-widest" href="#faq">FAQ</HoverLink>
                 </Navbar>
 
                 <div className="max-w-screen-md">
@@ -26,7 +30,10 @@ export default function Hero() {
                         and more, helping students build confidence and achieve academic success. Whether it&apos;s homework help or exam prep,
                         we&apos;re here to support every learner&apos;s journey!
                     </p>
-                    <button className="relative px-10 py-4 bg-black text-white font-bold rounded-full tracking-[4px] text-base my-8">
+                    <button 
+                        className="relative px-10 py-4 bg-black text-white font-bold rounded-full tracking-[4px] text-base my-8"
+                        onClick={() => document.getElementById("contact").scrollIntoView()}
+                    >
                         CONTACT US
                         <div className="absolute rounded-full size-full bg-black opacity-20 left-1 top-2 -z-10"></div>
                     </button>
@@ -37,9 +44,7 @@ export default function Hero() {
                 <Abstract />
             </div>
 
-            <div className="sm:absolute left-[50%] bottom-12 flex flex-col items-center gap-2 sm:translate-x-[-50%]">
-                <FaAngleDown size={32} />
-            </div>
+            <Arrow></Arrow>
 
         </div>
     );
