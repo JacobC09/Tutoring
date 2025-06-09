@@ -85,7 +85,10 @@ export default function Navbar({ children }) {
                 >
                     <div className={cn("flex flex-col items-center gap-8 pt-8 pb-16 transition-opacity duration-300 ease-out", dropDownOpen ? "opacity-100" : "opacity-0")}>
                         {children}
-                        <button className="relative px-10 py-4 bg-black text-white font-bold rounded-full tracking-[4px] mt-4">
+                        <button 
+                            className="relative px-10 py-4 bg-black text-white font-bold rounded-full tracking-[4px] mt-4"
+                            onClick={() => document.getElementById("contact").scrollIntoView()}
+                        >
                             CONTACT US
                             <div className="absolute rounded-full size-full bg-black opacity-20 left-1 top-2 -z-10"></div>
                         </button>
