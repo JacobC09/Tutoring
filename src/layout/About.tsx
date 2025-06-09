@@ -19,9 +19,9 @@ export default function About() {
                         <p className="mx-4 text-2xl font-bold">Online & In-Person</p>
                         <div className="pt-4 pb-8">
                             <ul className="list-disc ml-10 text-gray-600">
-                                <li>Customized lesson plans to target your strengths and challenges</li>
-                                <li>Flexible session lengths to match your learning pace</li>
-                                <li>Available on your preferred platform (Zoom, Google Meet, etc.)</li>
+                                <li>Join sessions in person (Oakville Libary) or online from anywhere</li>
+                                <li>Use your preferred platform (Zoom, Google Meet, etc.)</li>
+                                <li>Seamless transition between formats whenever you need</li>
                             </ul>
                         </div>
                     </div>
@@ -36,9 +36,9 @@ export default function About() {
                         <p className="mx-4 text-2xl font-bold">Convinient & Flexable</p>
                         <div className="pt-4 pb-8">
                             <ul className="list-disc ml-10 text-gray-600">
-                                <li>Customized lesson plans to target your strengths and challenges</li>
-                                <li>Flexible session lengths to match your learning pace</li>
-                                <li>Available on your preferred platform (Zoom, Google Meet, etc.)</li>
+                                <li>Sessions built around your schedule</li>
+                                <li>Adjustable lesson lengths to match your pace</li>
+                                <li>Easy to book, reschedule, or switch between online and in-person</li>
                             </ul>
                         </div>
                     </div>
@@ -53,9 +53,9 @@ export default function About() {
                         <p className="mx-4 text-2xl font-bold">Personalized Learning</p>
                         <div className="pt-4 pb-8">
                             <ul className="list-disc ml-10 text-gray-600">
-                                <li>Customized lesson plans to target your strengths and challenges</li>
-                                <li>Flexible session lengths to match your learning pace</li>
-                                <li>Available on your preferred platform (Zoom, Google Meet, etc.)</li>
+                                <li>Custom lesson plans based on your goals and learning style</li>
+                                <li>One-on-one support with full attention on you</li>
+                                <li>Ongoing progress tracking and feedback</li>
                             </ul>
                         </div>
                     </div>

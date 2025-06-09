@@ -20,7 +20,7 @@ export default function Subjects() {
 
                         <p className="font-bold text-lg mt-4">Math</p>
                         <p className="py-2">
-                            Basic Arithmetic, Fractions and Decimals, Geometry, Measurement, Data and Graphing, Basic, Ratios and Proportions, Integers and Rational Numbers, Expressions and Equations, Geometry, Statistics, Probability, Functions, Algebra, Geometry, Algebra, Trigonometry, Pre-Calculus, Calculus, Statistics, Linear Algebra
+                            Tutoring for Grades 1-12, including arithmetic, algebra, geometry, data management, and advanced functions.
                         </p>
                     </div>
                 </FadeIn>
@@ -32,7 +32,9 @@ export default function Subjects() {
                         </div>
 
                         <p className="font-bold text-lg mt-4">Science</p>
-                        <p className="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eos veritatis laudantium omnis maxime ad dolorum id vero veniam.</p>
+                        <p className="py-2">
+                            Support for Grades 1-12 in general science, biology, chemistry, and physics — with a focus on building real understanding.
+                        </p>
                     </div>
                 </FadeIn>
 
@@ -43,7 +45,9 @@ export default function Subjects() {
                         </div>
 
                         <p className="font-bold text-lg mt-4">English</p>
-                        <p className="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eos veritatis laudantium omnis maxime ad dolorum id vero veniam.</p>
+                        <p className="py-2">
+                            Help with reading, writing, grammar, and essay skills for students in Grades 1-12.
+                        </p>
                     </div>
                 </FadeIn>
 
@@ -54,7 +58,9 @@ export default function Subjects() {
                         </div>
 
                         <p className="font-bold text-lg mt-4">Computer Science</p>
-                        <p className="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eos veritatis laudantium omnis maxime ad dolorum id vero veniam.</p>
+                        <p className="py-2">
+                            For Grades 6-12: learn the basics of programming, algorithms, and computer logic. Languages include Python, C++, JavaScript, and more.
+                        </p>
                     </div>
                 </FadeIn>
 
@@ -65,19 +71,22 @@ export default function Subjects() {
                         </div>
 
                         <p className="font-bold text-lg mt-4">Music</p>
-                        <p className="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eos veritatis laudantium omnis maxime ad dolorum id vero veniam.</p>
+                        <p className="py-2">
+                            For Grades 1-12: music theory, composition, and performance basics. I also do piano and guitar lessons.
+                        </p>
                     </div>
                 </FadeIn>
 
                 <FadeIn>
-
                     <div className="p-8 border-gray-200 border-t">
                         <div className="bg-blue-300 text-blue-700 p-3 rounded-lg inline-block">
                             <FaBrain size={20} />
                         </div>
 
-                        <p className="font-bold text-lg mt-4">Exam Prep</p>
-                        <p className="py-2">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni eos veritatis laudantium omnis maxime ad dolorum id vero veniam.</p>
+                        <p className="font-bold text-lg mt-4">Other</p>
+                        <p className="py-2">
+                            Need help with something outside these subjects? I work with students in Grades 1-12 across a wide range of topics, just ask.
+                        </p>
                     </div>
                 </FadeIn>
 
