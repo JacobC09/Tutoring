@@ -39,7 +39,7 @@ export default function Navbar({ children }) {
 
     return (
         <>
-            <nav ref={heroNav} className="sm:absolute top-0 flex flex-col items-center gap-12 my-12 md:my-32 xl:items-start">
+            <nav ref={heroNav} className="mb-20 sm:absolute top-0 flex flex-col items-center gap-12 my-12 md:my-32 xl:items-start">
                 <div className="flex items-center left-24 gap-4 text-xl sm:text-2xl tracking-wide font-title text-blue-400">
                     <FaRegHandPeace size={36} className="scale-75 sm:scale-100" />
                     <p>Comay Tutoring Co.</p>
