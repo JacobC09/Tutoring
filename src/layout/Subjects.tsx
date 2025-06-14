@@ -1,14 +1,18 @@
 import Section from "@/components/Section";
 import { FaBook, FaDna, FaComputer, FaMusic, FaBrain } from "react-icons/fa6"
 import { PiMathOperationsBold } from "react-icons/pi";
-import FadeIn from "@/components/FadeIn";
+import FadeIn from "@/components/animations/FadeIn";
+import GradualSpacing from "@/components/animations/GradualSpacing";
+import TextWave from "@/components/animations/TextWave";
 
 
 export default function Subjects() {
     return (
         <Section id="subjects">
-            <p className="tracking-[10px] text-center font-bold">Subjects</p>
-            <h2 className="text text-7xl text-center text-blue-400 mt-12 mb-24">What We Offer</h2>
+            <FadeIn distance={20}>
+                <TextWave center={true} className="tracking-[10px] text-center font-bold">Subjects</TextWave>
+            </FadeIn>
+            <GradualSpacing center={true} length={0.02} className="font-title text-5xl sm:text-7xl text-blue-400 mt-12 mb-24">What We Offer</GradualSpacing>
 
             <div className="grid lg:grid-cols-2">
 

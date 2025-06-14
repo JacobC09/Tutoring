@@ -1,4 +1,5 @@
-import HoverLink from "@/components/HoverLink";
+import HoverLink from "@/components/animations/HoverLink";
+import { EMAIL, PHONE } from "@/lib/constants";
 import { FaLocationDot } from "react-icons/fa6"
 
 export default function Footer() {
@@ -21,7 +22,7 @@ export default function Footer() {
                 <div className="space-y-4">
                     <p className="text-lg font-bold ">Sign up for our newsletter for updates!</p>
                     <div>
-                        <form action="https://formsubmit.co/jake.comay@gmail.com" method="post" className="flex gap-4 text-black flex-col 3xl:flex-row">
+                        <form action={`https://formsubmit.co/${EMAIL}`} method="post" className="flex gap-4 text-black flex-col 3xl:flex-row">
                             <input type="hidden" name="_autoresponse" value="Thanks for joining the newsletter! Stay tuned for updates." />
                             <input type="hidden" name="_subject" value="[Newsletter]" />
                             <input type="email" name="email" placeholder="example@domain.com" autoComplete="email"
@@ -38,8 +39,8 @@ export default function Footer() {
 
                 <div className="text-lg mr-16 space-y-4">
                     <p className="font-bold text-blue-400">Contact</p>
-                    <p>289-981-0712</p>
-                    <p>jake.comay@gmail.com</p>
+                    <p>{PHONE}</p>
+                    <p>{EMAIL}</p>
                 </div>
 
                 <div className="text-lg mr-64 space-y-4">

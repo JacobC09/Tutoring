@@ -1,8 +1,10 @@
+import { EMAIL } from "@/lib/constants";
+
 export default function ContactForm() {
     return (
         <div className="bg-gray-200 p-8 rounded-lg">
 
-            <form action="https://formsubmit.co/jake.comay@gmail.com" method="post">
+            <form action={`https://formsubmit.co/${EMAIL}`} method="post">
                 <input type="hidden" name="_autoresponse" value="Thanks for the message! Get back to you as soon as I can." />
 
                 <div className="mb-5">

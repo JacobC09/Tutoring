@@ -2,7 +2,9 @@
 
 import { cn } from "@/lib/utils";
 import { useEffect, useRef, useState } from "react";
-import { FaRegHandPeace, FaBars } from "react-icons/fa6";
+import { FaBookBookmark, FaBars } from "react-icons/fa6";
+import GradualSpacing from "@/components/animations/GradualSpacing";
+import FadeIn from "@/components/animations/FadeIn";
 
 export default function Navbar({ children }) {
     const [showNav, setShowNav] = useState<boolean>(false);
@@ -39,14 +41,14 @@ export default function Navbar({ children }) {
 
     return (
         <>
-            <nav ref={heroNav} className="mb-20 sm:absolute top-0 flex flex-col items-center gap-12 my-12 md:my-32 xl:items-start">
-                <div className="flex items-center left-24 gap-4 text-xl sm:text-2xl tracking-wide font-title text-blue-400">
-                    <FaRegHandPeace size={36} className="scale-75 sm:scale-100" />
-                    <p>Comay Tutoring Co.</p>
-                </div>
-
-                <div className="hidden md:flex items-center justify-start gap-24">
-                    {children}
+            <nav ref={heroNav}>
+                <div className="flex items-center gap-4 text-xl sm:text-2xl tracking-wide font-title text-blue-400">
+                    <FadeIn distance={20}>
+                        <FaBookBookmark size={28} className="scale-75 sm:scale-100" />
+                    </FadeIn>
+                    <GradualSpacing length={0.02}>
+                        Comay Tutoring Co.
+                    </GradualSpacing>
                 </div>
             </nav>
 
@@ -56,7 +58,7 @@ export default function Navbar({ children }) {
             )}>
                 <div className="relative px-8 xs:12 sm:px-20 md:24 py-8 flex items-center justify-between">
                     <div className="flex items-center gap-4 text-2xl tracking-wide font-title text-blue-400">
-                        <FaRegHandPeace size={36} />
+                        <FaBookBookmark size={28} />
                         <p>Comay Tutoring Co.</p>
                     </div>
 
@@ -64,7 +66,10 @@ export default function Navbar({ children }) {
                         {children}
                     </div>
 
-                    <button className="hidden 2xl:block relative px-10 py-4 bg-black text-white font-bold rounded-full tracking-[4px]">
+                    <button 
+                        className="hidden 2xl:block relative px-10 py-4 bg-black text-white font-bold rounded-full tracking-[4px]"
+                        onClick={() => document.getElementById("contact").scrollIntoView()}
+                    >
                         CONTACT US
                         <div className="absolute rounded-full size-full bg-black opacity-20 left-1 top-2 -z-10"></div>
                     </button>
@@ -96,6 +101,5 @@ export default function Navbar({ children }) {
                 </div>
             </nav>
         </>
-
     );
 }

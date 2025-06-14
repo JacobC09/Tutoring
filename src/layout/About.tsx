@@ -1,17 +1,21 @@
-import FadeIn from "@/components/FadeIn";
+import FadeIn from "@/components/animations/FadeIn";
+import GradualSpacing from "@/components/animations/GradualSpacing";
+import TextWave from "@/components/animations/TextWave";
 import Section from "@/components/Section"
 import { FaHeadset, FaCalendarCheck, FaBookOpenReader } from "react-icons/fa6"
 
 export default function About() {
     return (
         <Section dark id="about">
-            <p className="tracking-[10px] text-center font-bold">About Us</p>
-            <h2 className="text text-5xl sm:text-7xl text-center text-blue-400 mt-12 mb-24">How Does It Work?</h2>
+            <FadeIn distance={20}>
+                <TextWave center={true} className="tracking-[10px] text-center font-bold">About Us</TextWave>
+            </FadeIn>
+            <GradualSpacing center={true} length={0.02} className="font-title text-5xl sm:text-7xl text-blue-400 mt-12 mb-24">How Does It Work?</GradualSpacing>
 
             <div className="grid lg:grid-cols-2 xl:grid-cols-3 gap-4 4xl:gap-8">
 
                 <FadeIn>
-                    <div className="p-4 bg-blue-100 rounded-md border-blue-200 border-2">
+                    <div className="p-4 h-full bg-blue-100 rounded-md border-blue-200 border-2">
                         <div className="flex justify-center w-full py-10">
                             <FaHeadset size={48} className="text-blue-500" />
                         </div>
@@ -28,7 +32,7 @@ export default function About() {
                 </FadeIn>
 
                 <FadeIn delay={0.25}>
-                    <div className="p-4 bg-blue-100 rounded-md border-blue-200 border-2">
+                    <div className="p-4 h-full bg-blue-100 rounded-md border-blue-200 border-2">
                         <div className="flex justify-center w-full py-10">
                             <FaCalendarCheck size={48} className="text-blue-500" />
                         </div>
@@ -45,7 +49,7 @@ export default function About() {
                 </FadeIn>
 
                 <FadeIn delay={0.5}>
-                    <div className="p-4 bg-blue-100 rounded-md border-blue-200 border-2">
+                    <div className="p-4 h-full bg-blue-100 rounded-md border-blue-200 border-2">
                         <div className="flex justify-center w-full py-10">
                             <FaBookOpenReader size={48} className="text-blue-500" />
                         </div>

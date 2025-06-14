@@ -4,7 +4,7 @@ import { cn } from "@/lib/utils";
 import { useRef, useState } from "react";
 import { FaArrowRight } from "react-icons/fa6"
 
-export default function Question({question, answer}) {
+export default function Question({ question, answer }) {
     const [open, setOpen] = useState<boolean>(false);
 
     let ref = useRef<HTMLDivElement>(null)
