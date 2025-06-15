@@ -14,7 +14,7 @@ export default function Contact() {
 
             <div className="mt-12 mb-24 lg:my-20 grid lg:grid-cols-2 items-center gap-24">
                 <div>
-                    <GradualSpacing length={0.02} className="font-title justify-center lg:justify-start text-5xl sm:text-7xl text-blue-400">Let's Chat!</GradualSpacing>
+                    <GradualSpacing length={0.02} className="font-title justify-center lg:justify-start text-5xl sm:text-7xl text-blue-400">Let's Chat</GradualSpacing>
                     
                     <p className="py-10">
                         Feel free to send us a message. We'll be happy to schedule a session or answer any questions you may have.

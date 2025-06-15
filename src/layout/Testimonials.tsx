@@ -7,7 +7,7 @@ import FadeIn from "@/components/animations/FadeIn";
 
 export default function Testimonials() {
     return (
-        <Section id="testimonials">
+        <Section dark id="testimonials">
             <FadeIn distance={20}>
                 <p className="tracking-[10px] text-center font-bold">Testamonials</p>
             </FadeIn>
@@ -30,6 +30,7 @@ export default function Testimonials() {
                     <Testimonial {...testimonials[4]} bg="bg-rose-300" line="bg-rose-400" className="min-w-96" />
                 </Slideshow>
             </div>
+            <div className="h-24"></div>
         </Section>
     );
 }

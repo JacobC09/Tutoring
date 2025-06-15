@@ -15,8 +15,8 @@ export default function Home() {
             <About />
             <Subjects />
             <Contact />
-            <Testimonials />
             <Faq />
+            <Testimonials />
             <Footer />
             <Chat />
         </>

@@ -5,6 +5,7 @@ import { useEffect, useRef, useState } from "react";
 import { FaBookBookmark, FaBars } from "react-icons/fa6";
 import GradualSpacing from "@/components/animations/GradualSpacing";
 import FadeIn from "@/components/animations/FadeIn";
+import { NAME } from "@/lib/constants";
 
 export default function Navbar({ children }) {
     const [showNav, setShowNav] = useState<boolean>(false);
@@ -47,7 +48,7 @@ export default function Navbar({ children }) {
                         <FaBookBookmark size={28} className="scale-75 sm:scale-100" />
                     </FadeIn>
                     <GradualSpacing length={0.02}>
-                        Comay Tutoring Co.
+                        {NAME}
                     </GradualSpacing>
                 </div>
             </nav>
@@ -59,7 +60,7 @@ export default function Navbar({ children }) {
                 <div className="relative px-8 xs:12 sm:px-20 md:24 py-8 flex items-center justify-between">
                     <div className="flex items-center gap-4 text-2xl tracking-wide font-title text-blue-400">
                         <FaBookBookmark size={28} />
-                        <p>Comay Tutoring Co.</p>
+                        <p>{NAME}</p>
                     </div>
 
                     <div className="hidden 2xl:flex 3xl:absolute 3xl:w-full left-0 items-center justify-center mx-auto gap-16 3xl:gap-24">
