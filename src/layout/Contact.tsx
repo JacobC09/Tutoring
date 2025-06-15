@@ -4,18 +4,17 @@ import FadeIn from "@/components/animations/FadeIn";
 import { FaPhone, FaEnvelope } from "react-icons/fa6"
 import { EMAIL, PHONE } from "@/lib/constants";
 import GradualSpacing from "@/components/animations/GradualSpacing";
-import TextWave from "@/components/animations/TextWave";
 
 export default function Contact() {
     return (
         <Section dark id="contact">
             <FadeIn distance={20}>
-                <TextWave center={true} className="tracking-[10px] text-center font-bold">Contact Us</TextWave>
+                <p className="tracking-[10px] text-center font-bold">Contact Us</p>
             </FadeIn>
-            
-            <div className="my-20 grid lg:grid-cols-2 items-center gap-24">
+
+            <div className="mt-12 mb-24 lg:my-20 grid lg:grid-cols-2 items-center gap-24">
                 <div>
-                    <GradualSpacing length={0.02} className="font-title text-5xl sm:text-7xl text-blue-400">Let's Chat!</GradualSpacing>
+                    <GradualSpacing length={0.02} className="font-title justify-center lg:justify-start text-5xl sm:text-7xl text-blue-400">Let's Chat!</GradualSpacing>
                     
                     <p className="py-10">Feel free to send us a message and we'll be happy to schedule a session or answer any questions you have.</p>
 

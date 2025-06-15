@@ -1,6 +1,5 @@
 import FadeIn from "@/components/animations/FadeIn";
 import GradualSpacing from "@/components/animations/GradualSpacing";
-import TextWave from "@/components/animations/TextWave";
 import Section from "@/components/Section"
 import { FaHeadset, FaCalendarCheck, FaBookOpenReader } from "react-icons/fa6"
 
@@ -8,7 +7,7 @@ export default function About() {
     return (
         <Section dark id="about">
             <FadeIn distance={20}>
-                <TextWave center={true} className="tracking-[10px] text-center font-bold">About Us</TextWave>
+                <p className="tracking-[10px] text-center font-bold">About Us</p>
             </FadeIn>
             <GradualSpacing center={true} length={0.02} className="font-title text-5xl sm:text-7xl text-blue-400 mt-12 mb-24">How Does It Work?</GradualSpacing>
 

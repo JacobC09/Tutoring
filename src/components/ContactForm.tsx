@@ -1,4 +1,5 @@
 import { EMAIL } from "@/lib/constants";
+import Button from "@/components/Button";
 
 export default function ContactForm() {
     return (
@@ -36,10 +37,7 @@ export default function ContactForm() {
                         className="w-full py-3 px-6 rounded-md border border-gray-300 text-base font-medium outline-none focus:border-blue-400 focus:shadow-sm"></textarea>
                 </div>
                 <div>
-                    <button
-                        className="hover:shadow-form rounded-md bg-blue-500 py-3 px-8 text-base font-semibold text-white outline-none">
-                        Submit
-                    </button>
+                    <Button>Submit</Button>
                 </div>
             </form>
         </div>

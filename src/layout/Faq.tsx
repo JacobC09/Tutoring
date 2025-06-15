@@ -1,16 +1,16 @@
 "use client";
 
+import Button from "@/components/Button";
 import Question from "@/components/Question";
 import Section from "@/components/Section";
 import FadeIn from "@/components/animations/FadeIn";
 import GradualSpacing from "@/components/animations/GradualSpacing";
-import TextWave from "@/components/animations/TextWave";
 
 export default function Faq() {
     return (
         <Section dark id="faq">
             <FadeIn distance={20}>
-                <TextWave center={true} className="tracking-[10px] text-center font-bold">Freqeuently Asked Questions</TextWave>
+                <p className="tracking-[10px] text-center font-bold">Freqeuently Asked Questions</p>
             </FadeIn>
             <GradualSpacing center={true} length={0.02} className="font-title text-5xl sm:text-7xl text-blue-400 mt-12 mb-24">Have Questions?</GradualSpacing>
             
@@ -22,13 +22,12 @@ export default function Faq() {
 
             <FadeIn>
                 <div className="mt-16 flex flex-col items-center w-full space-y-6">
-                    <TextWave length={0.05}>Still Got Questions? Ask them here</TextWave>
-                    <button
-                        className="hover:shadow-form rounded-md bg-blue-500 py-3 px-8 text-base font-semibold text-white outline-none"
+                    <p>Still Got Questions? Ask them here</p>
+                    <Button
                         onClick={() => document.getElementById("contact").scrollIntoView()}
                     >
                         Contact
-                    </button>
+                    </Button>
                 </div>
             </FadeIn>
         </Section>
