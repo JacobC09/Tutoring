@@ -55,7 +55,7 @@ function Testimonial({ name, desc, bg, line, className = "" }) {
 const testimonials = [
     {
         name: "Beth M.",
-        desc: "My daughter's confidence in math has really improved since working with Jake. The sessions are relaxed but focused, and I love that we can do them online when we're busy."
+        desc: "My son's confidence in math has really improved since working with Jake. The sessions are relaxed but focused, and I love that we can do them online when we're busy."
     },
     {
         name: "Dan C.",
