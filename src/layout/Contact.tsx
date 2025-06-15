@@ -16,7 +16,9 @@ export default function Contact() {
                 <div>
                     <GradualSpacing length={0.02} className="font-title justify-center lg:justify-start text-5xl sm:text-7xl text-blue-400">Let's Chat!</GradualSpacing>
                     
-                    <p className="py-10">Feel free to send us a message and we'll be happy to schedule a session or answer any questions you have.</p>
+                    <p className="py-10">
+                        Feel free to send us a message. We'll be happy to schedule a session or answer any questions you may have.
+                    </p>
 
                     <div className="grid gap-4">
                         <FadeIn>

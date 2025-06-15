@@ -22,7 +22,7 @@ export default function About() {
                         <p className="mx-4 text-2xl font-bold">Online & In-Person</p>
                         <div className="pt-4 pb-8">
                             <ul className="list-disc ml-10 text-gray-600">
-                                <li>Join sessions in person (Oakville Libary) or online from anywhere</li>
+                                <li>Join sessions in person (Oakville Library) or online from anywhere</li>
                                 <li>Use your preferred platform (Zoom, Google Meet, etc.)</li>
                                 <li>Seamless transition between formats whenever you need</li>
                             </ul>
@@ -36,7 +36,7 @@ export default function About() {
                             <FaCalendarCheck size={48} className="text-blue-500" />
                         </div>
 
-                        <p className="mx-4 text-2xl font-bold">Convinient & Flexable</p>
+                        <p className="mx-4 text-2xl font-bold">Convenient & Flexible</p>
                         <div className="pt-4 pb-8">
                             <ul className="list-disc ml-10 text-gray-600">
                                 <li>Sessions built around your schedule</li>
