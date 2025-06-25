@@ -1,12 +1,13 @@
-import { EMAIL } from "@/lib/constants";
 import Button from "@/components/Button";
 
 export default function ContactForm() {
     return (
         <div className="bg-gray-200 p-8 rounded-lg">
 
-            <form action={`https://formsubmit.co/${EMAIL}`} method="post">
-                <input type="hidden" name="_autoresponse" value="Thanks for the message! Get back to you as soon as I can." />
+            <form action="https://api.web3forms.com/submit" method="post">
+                <input type="hidden" name="access_key" value="ea22d7bc-7d80-40ea-87f4-82cde05b256a" />
+                <input type="hidden" name="from_name" value="Comay Tutoring" />
+
 
                 <div className="mb-5">
                     <label htmlFor="name" className="mb-3 block text-base font-medium text-[#07074D]">
